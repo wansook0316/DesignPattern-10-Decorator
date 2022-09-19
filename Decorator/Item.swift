@@ -20,9 +20,9 @@ internal protocol Item {
 extension Item {
 
     internal func printContent() {
-        (0..<self.lineCount).forEach { index in
-            print(self.string(of: index))
-        }
+        (0..<self.lineCount)
+            .compactMap { self.string(of: $0) }
+            .forEach { print($0) }
     }
 
 }
