@@ -7,7 +7,8 @@
 
 import Foundation
 
-internal struct Strings {
+internal class Strings {
+
     internal var lineCount: Int {
         self.strings.count
     }
