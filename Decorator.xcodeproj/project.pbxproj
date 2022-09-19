@@ -12,6 +12,7 @@
 		CE36610028D7F5A900DAC9A9 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3660FF28D7F5A900DAC9A9 /* Strings.swift */; };
 		CE36610228D7F8C300DAC9A9 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36610128D7F8C300DAC9A9 /* Decorator.swift */; };
 		CE36610628D7F9C200DAC9A9 /* SideDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36610528D7F9C200DAC9A9 /* SideDecorator.swift */; };
+		CE7E151828D9347E009A6B66 /* BoxDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E151728D9347E009A6B66 /* BoxDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		CE3660FF28D7F5A900DAC9A9 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		CE36610128D7F8C300DAC9A9 /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
 		CE36610528D7F9C200DAC9A9 /* SideDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDecorator.swift; sourceTree = "<group>"; };
+		CE7E151728D9347E009A6B66 /* BoxDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				CE3660FF28D7F5A900DAC9A9 /* Strings.swift */,
 				CE36610128D7F8C300DAC9A9 /* Decorator.swift */,
 				CE36610528D7F9C200DAC9A9 /* SideDecorator.swift */,
+				CE7E151728D9347E009A6B66 /* BoxDecorator.swift */,
 			);
 			path = Decorator;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3660FE28D7F49A00DAC9A9 /* Item.swift in Sources */,
+				CE7E151828D9347E009A6B66 /* BoxDecorator.swift in Sources */,
 				CE36610228D7F8C300DAC9A9 /* Decorator.swift in Sources */,
 				CE36610028D7F5A900DAC9A9 /* Strings.swift in Sources */,
 				CE36610628D7F9C200DAC9A9 /* SideDecorator.swift in Sources */,
