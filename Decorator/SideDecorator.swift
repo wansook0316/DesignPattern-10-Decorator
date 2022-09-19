@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct SideDecorator: Decorator {
+internal struct SideD1ecorator: Decorator {
 
     internal var item: Item
 
@@ -33,7 +33,7 @@ internal struct SideDecorator: Decorator {
     }
 
     internal func string(of index: Int) -> String? {
-        guard let string = self.item.length(of: index) else {
+        guard let string = self.item.string(of: index) else {
             return nil
         }
 
