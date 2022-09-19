@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct SideD1ecorator: Decorator {
+internal struct SideDecorator: Decorator {
 
     internal var item: Item
 
@@ -19,9 +19,9 @@ internal struct SideD1ecorator: Decorator {
         self.item.maxLength + 2
     }
 
-    internal init(item: Item, sideString: String) {
+    internal init(item: Item, side: String) {
         self.item = item
-        self.sideString = sideString
+        self.side = side
     }
 
     internal func length(of index: Int) -> Int? {
@@ -37,9 +37,9 @@ internal struct SideD1ecorator: Decorator {
             return nil
         }
 
-        return self.sideString + string + self.sideString
+        return [side, string, side].joined(separator: "")
     }
 
-    private let sideString: String
+    private let side: String
 
 }
