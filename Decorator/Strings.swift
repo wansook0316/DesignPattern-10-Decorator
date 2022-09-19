@@ -28,17 +28,17 @@ internal struct Strings {
 
 extension Strings: Item {
 
-    internal func length(of index: Int) -> Int {
+    internal func length(of index: Int) -> Int? {
         guard index < self.lineCount else {
-            return
+            return nil
         }
 
         return self.strings[index].count
     }
 
-    internal func string(of index: Int) -> String {
+    internal func string(of index: Int) -> String? {
         guard index < self.lineCount else {
-            return
+            return nil
         }
 
         return self.strings[index]

@@ -12,8 +12,8 @@ internal protocol Item {
     var lineCount: Int { get }
     var maxLength: Int { get }
 
-    func length(of index: Int) -> Int
-    func string(of index: Int) -> String
+    func length(of index: Int) -> Int?
+    func string(of index: Int) -> String?
 
 }
 
