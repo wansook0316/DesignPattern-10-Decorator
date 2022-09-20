@@ -35,7 +35,7 @@ internal struct BoxDecorator: Decorator {
         let maxWidth = self.maxLength
 
         let side: String
-        let content: String?
+        let content: String
 
         if index == 0 || index == self.lineCount - 1 {
             side = "+"
@@ -43,12 +43,15 @@ internal struct BoxDecorator: Decorator {
                 .map { _ in String.init(stringLiteral: "-") }
                 .joined(separator: "")
         } else {
+            guard let string = self.item.string(of: index - 1),
+                  let width = self.item.length(of: index - 1) else {
+                return nil
+            }
             side = "|"
-            content = self.item.string(of: index - 1)
-        }
-
-        guard let content = content else {
-            return nil
+            let space = (0..<maxWidth - width - 2)
+                .map { _ in " "}
+                .joined(separator: "")
+            content = [string, space].joined(separator: "")
         }
 
         return [side, content, side].joined(separator: "")

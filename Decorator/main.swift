@@ -10,12 +10,14 @@ import Foundation
 internal func main() {
     let strings = Strings()
 
-    strings.add(item: "안녕~!")
-    strings.add(item: "나는 완숙쿤이야")
-    strings.add(item: "iOS 개발을 하고 잇성")
-    strings.add(item: "디자인 패턴은 이제 많이 퇴색되었대!")
+    strings.add(item: "HI H.I.~!")
+    strings.add(item: "I'm Wansook kun~!")
+    strings.add(item: "I'm iOS Developer!")
+    strings.add(item: "Design Pattern is not so good as much as before!")
 
-    let decorator = SideDecorator(item: strings, side: "\"")
+    var decorator: Item = SideDecorator(item: strings, side: "\"")
+    decorator = LineNumberDecorator(item: decorator)
+    decorator = BoxDecorator(item: decorator)
     decorator.printContent()
 }
 
